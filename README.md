@@ -3,26 +3,31 @@
 ## Git workflow
 
 _no forks will be used in the git repo!_
-You will all have your OWN Repo that will live in your Github Org that you will work from.
+Your Team Leader will set up a Github organization for you to join. Each organization should have a SEPARATE REPOSITORY for each student's role (e.g. Landing Page (UX/UI), Frontend, Backend).
 
+If you are working together with another Front End Architect you will both work on the same repo on separate branches.
+
+Git workflow:
 1. Clone the master branch of the repository.
-   - `git clone [repo link]`
-2. Checkout a new branch: `firstname-lastname`
-   - All branches will merge back into master branch.
-
-A good order could be:
-
-1. Make sure master is up to date `git pull`
-2. Create new branch `git branch firstname-lastname`
-3. Checkout branch: `git checkout firstname-lastname`
-4. Add some features!
-5. Checkout master branch `git checkout master`
-6. Make sure master is up to date `git pull`
-7. Checkout branch: `git checkout firstname-lastname`
-8. Merge the master `git merge master`
-9. Resove any conflicts
-10. Commit changes `git commit -m "message"`
-11. `git push`
+   - In your terminal: `git clone [repo link]`
+   - DO NOT FORK THE REPO
+2. Make sure master is up to date: `git pull`
+3. Create new branch: `git branch firstname-lastname`
+4. Checkout branch: `git checkout firstname-lastname`
+5. Add some features!
+6. Make regular commits per usual.
+   - `git add -A`
+   - `git commit -m "a descriptive commit message"`
+   - On first push to branch use: `git push -u origin [firstname-lastname]`
+   - Subsequent pushes: `git push [firstname-lastname]`
+7. When a feature is COMPLETE: checkout master branch: `git checkout master`
+8. Make sure master is up to date `git pull`
+9. Checkout branch: `git checkout firstname-lastname`
+10. Merge the master `git merge master`
+11. Resove any conflicts - let me know if you need any help with this!
+12. Commit changes `git commit -m "message"`
+13. push it!
+14. On github, make a pull request to be approved by TL or PM.
 
 Pitch: The Bountiful Children's Foundation needs a way to collect success stories from 15 different countries, rather than losing them through email, facebook messages, etc.
 
